@@ -231,14 +231,14 @@ class Driver:
 		"""
 		return Teams(self.client)
 
-        @property
-        def scheme(self):
-                """
-                Api endpoint for schemes
-
-                :return: Instance of :class:`~endpoints.scheme.Scheme`
-                """
-                return Scheme(self.client)
+	@property
+	def scheme(self):
+		"""
+		Api endpoint for scheme
+        
+		:return: Instance of :class:`~endpoints.scheme.Scheme`
+		"""
+		return Scheme(self.client)
 
 	@property
 	def channels(self):
